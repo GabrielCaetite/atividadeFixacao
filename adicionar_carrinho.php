@@ -27,6 +27,7 @@
             }
         ?>
         
+        <a href="ver_carrinho.php">Visualizar Carrinho</a>
     </div>
 
 </body>
