@@ -1,9 +1,17 @@
+<?php
+    session_start();
+    if(isset($_GET['adicionar'])){
+        echo '<script>alert("vai se fuder");</script>';
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h2 class="titulo">Podutos</h2>
@@ -17,16 +25,17 @@
         ?>
         
         <div class="produto">
-            <img src="<?php echo $value['imagem'] ?>" alt="Bermuda">
-            <label for=""><?php echo $value['nome'] ?></label>
-            <p><?php echo $value['preco'] ?></p>
-            <a href="?adicionar = <?php echo $key ?>">Adicionar ao carrinho</a>
+            <img src="<?php echo 'imagens/' . $value['imagem'] ?>" alt="Bermuda">
+            <p><?php echo $value['nome'] ?></p>
+            <p><?php echo "R$ ".$value['preco'] ?></p>
+            <a href="?adicionar=<?php echo $key ?>">Adicionar ao carrinho</a>
         </div>
 
         <?php
+            
             }
         ?>
-        
+        <br>
         <a href="ver_carrinho.php">Visualizar Carrinho</a>
     </div>
 
