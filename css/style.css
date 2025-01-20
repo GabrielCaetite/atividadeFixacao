@@ -14,14 +14,12 @@
 .lista-produtos{
     display: flex;
     margin: 10px auto;
-
 }
 
 .produto{
     width: 33.3%;
     text-align: center;
     padding: 80px;
-
 }
 
 .produto img{
@@ -29,8 +27,8 @@
 }
 
 .produto p{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .produto a{
@@ -41,17 +39,99 @@
     display: block;
     font-size: 18px;
     border-radius: 100px;
-
 }
 
-.acessar-carrinho{
-    padding: 30px 0 30px 80px;
+.link{
+    padding: 25px 0 30px 80px;
 }
-.acessar-carrinho a{
+
+.link a{
     background-color: black;
     padding: 7px;
     text-decoration: none;
     color: deepskyblue;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 30px;
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin: 5px;
 }
+
+.container-carrinho{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+.container-carrinho table{
+    margin: 0 auto;
+}
+
+tr, th, td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: deepskyblue;
+
+}
+
+th, td{
+    width: 150px;
+    height: 30px;
+}
+
+.remover{
+    border: none;
+    background-color: white;
+}
+
+.container-carrinho a{
+    text-decoration: none;
+    background-color: black;
+    color: deepskyblue;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.total-geral{
+    width: 10%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color:black;
+    color: deeppink;
+    text-align: center;
+}
+
+.form{
+    background-color: deepskyblue;
+    width: 20%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form input{
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 38px;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.form label{
+    margin-left: 38px;
+}
+
+
+.bt{
+    background-color: black;
+    color: deepskyblue;
+}
+
+
